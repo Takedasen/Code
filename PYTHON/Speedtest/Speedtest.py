@@ -17,3 +17,5 @@ print(f"Up Speed: {up} Mb/s")
     #! Test Ping
 ping = server.results.ping
 print(f"Ping: {ping}")
+
+print("Sensational")

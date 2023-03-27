@@ -7,3 +7,4 @@ os.system('cmd /c "echo Y|PowerShell.exe -NoProfile -Command Clear-RecycleBin"')
 for root, dirs, files in os.walk("C:\\Windows\\Temp"):
     for file in files:
         os.remove(os.path.join(root, file))
+        

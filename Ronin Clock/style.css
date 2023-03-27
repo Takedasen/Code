@@ -8,7 +8,7 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   color: #ce0909;
-  font-size: 70px;
+  font-size: 90px;
   font-family: Orbitron;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
 }

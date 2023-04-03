@@ -18,4 +18,5 @@ print(f"Up Speed: {up} Mb/s")
 ping = server.results.ping
 print(f"Ping: {ping}")
 
-print("Sensational")
+    #! Meme Place
+print("Speed Test - Sensational")

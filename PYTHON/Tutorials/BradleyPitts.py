@@ -1,20 +1,24 @@
-first_name = "Bradley"
-last_name = "Pitts"
-age = (50+9)
-status = "New patient"
-marital_status = "Divorced (Big L (ex of Angelina Jolie))"
-occupation = "A really good actor(In the past tense)"
-birth_place = "USA,Shawnee,Oklahoma"
-children = "6 children"
-illness = "Disease - insane sexiness"
-treatment_plan = "Treatment - pop some pills before bed"
-patient_expectations = "To get Angelina back"
-problems = "Need to give up drinking"
-notable_things = "Actually a nice dude"
-hair_color = "blonde"
+    #!Variables
+info = "Patient Information"
+first_name = "Name - Bradley"
+last_name = "Surname - Pitts"
+age = "Age - 59"
+status = "Status - New patient"
+marital_status = "Marital Status - Divorced (Big L (ex of Angelina Jolie))"
+occupation = "Occupation - A really good actor(In the past tense)"
+birth_place = "Born - USA, Shawnee, Oklahoma"
+children = "Heritage - 6 children"
+illness = "Disease - Insane sexiness"
+treatment_plan = "Treatment - Pop some pills before bed"
+patient_expectations = "Expectations - To get Angelina back"
+problems = "Problems - Need to give up drinking"
+notable_things = "Notes - Actually a nice dude"
+hair_color = "Hair - Blonde"
+info_end = "End of Patient Information"
 
-
- #?prints variables
+    #!Prints Variables
+print (info)
+print ()
 print (first_name)
 print (last_name)
 print (age)
@@ -29,3 +33,5 @@ print (patient_expectations)
 print (problems)
 print (notable_things)
 print (hair_color)
+print ()
+print (info_end)

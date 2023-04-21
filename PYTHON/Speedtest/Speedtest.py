@@ -1,22 +1,22 @@
 import speedtest as st
 
-    #! Set Best Server
+#! Set Best Server
 server = st.Speedtest()
 server.get_best_server()
 
-    #! Test Download Speed
+#! Test Download Speed
 down = server.download()
 down = down / 1000000
 print(f"Down Speed: {down} Mb/s")
 
-    #! Test Upload Speed
+#! Test Upload Speed
 up = server.upload()
 up = up / 1000000
 print(f"Up Speed: {up} Mb/s")
 
-    #! Test Ping
+#! Test Ping
 ping = server.results.ping
 print(f"Ping: {ping}")
 
-    #! Meme Place
+#! Meme Placing
 print("Speed Test - Sensational")

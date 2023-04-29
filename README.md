@@ -1,1 +1,1 @@
-Starting Developer, here you can find all of my projects
+Starting Python and Javascript Developer, here you can find all of my personal projects

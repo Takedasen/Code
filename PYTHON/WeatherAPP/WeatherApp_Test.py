@@ -52,27 +52,35 @@ def show_weather():
 
 #! Interface
 city_head = Label(
-    root, text="Enter a city:", font="Calibri 18", bg="#0a0a0a", fg="white"
+    root, text="Enter a city", font="Calibri 18 bold", bg="#0a0a0a", fg="white"
 )
 city_head.pack(pady=20)
 
-inp_city = Entry(root, textvariable=city_value, width=24, font="Calibri 16")
+inp_city = Entry(
+    root,
+    textvariable=city_value,
+    width=24,
+    font="Calibri 18",
+    bg="black",
+    fg="white",
+    insertbackground="white",
+)
 inp_city.pack()
 
 Button(
     root,
     command=show_weather,
     text="Check Weather",
-    font="Calibri 14 bold",
+    font="Calibri 18 bold",
     bg="red",
-    fg="white",
+    fg="black",
     activebackground="white",
     padx=10,
     pady=10,
 ).pack(pady=30)
 
 weather_now = Label(
-    root, text="Current Weather Info", font="Calibri 20 bold", bg="#0a0a0a", fg="white"
+    root, text="Current Weather Info", font="Calibri 18 bold", bg="#0a0a0a", fg="white"
 )
 weather_now.pack(pady=10)
 
@@ -80,9 +88,9 @@ tfield = Text(
     root,
     width=60,
     height=11,
-    font="Calibri 14",
-    bg="white",
-    fg="black",
+    font="Calibri 18",
+    bg="black",
+    fg="white",
     padx=10,
     pady=10,
 )

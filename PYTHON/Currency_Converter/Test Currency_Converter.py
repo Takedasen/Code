@@ -27,20 +27,20 @@ def convert_currency():
 
 root = Tk()
 root.title("Currency Converter")
+root.configure(background="black")
 
 #! create input widgets
-amount_label = Label(root, text="Amount:")
+amount_label = Label(root, text="Amount:", bg="black", fg="white")
 amount_entry = Entry(root)
-from_currency_label = Label(root, text="From currency:")
+from_currency_label = Label(root, text="From currency:", bg="black", fg="white")
 from_currency_var = StringVar(root)
-from_currency_var.set("USD")  #! set default value
+from_currency_var.set("USD")
 from_currency_menu = OptionMenu(
     root,
     from_currency_var,
     "USD",
     "EUR",
     "GBP",
-    "RUB",
     "UAH",
     "PLN",
     "INR",
@@ -49,16 +49,15 @@ from_currency_menu = OptionMenu(
     "CAD",
     "CHF",
 )
-to_currency_label = Label(root, text="To currency:")
+to_currency_label = Label(root, text="To currency:", bg="black", fg="white")
 to_currency_var = StringVar(root)
-to_currency_var.set("EUR")  #! set default value
+to_currency_var.set("EUR")
 to_currency_menu = OptionMenu(
     root,
     to_currency_var,
     "USD",
     "EUR",
     "GBP",
-    "RUB",
     "UAH",
     "PLN",
     "INR",
@@ -67,14 +66,15 @@ to_currency_menu = OptionMenu(
     "CAD",
     "CHF",
 )
-convert_button = Button(root, text="Convert", command=convert_currency)
-
-result_label = Label(
-    root,
-    text="Result:",
-    font=("Arial", 22, "bold"),
+convert_button = Button(
+    root, text="Convert", bg="red", fg="white", command=convert_currency
 )
 
+result_label = Label(
+    root, text="Result:", font=("Arial", 22, "bold"), bg="black", fg="white"
+)
+
+#! layout input widgets
 amount_label.grid(row=0, column=0, padx=10, pady=10)
 amount_entry.grid(row=0, column=1, padx=10, pady=10)
 from_currency_label.grid(row=1, column=0, padx=10, pady=10)
